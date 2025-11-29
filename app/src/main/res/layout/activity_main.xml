@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toStartOf="@id/settings_button"
+        android:layout_toLeftOf="@id/settings_button"
+        android:text="MotoGymkhana Timer"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:paddingTop="0dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_round_bg"
+        android:contentDescription="Settings"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_settings_black_24dp" />
+
+    <!-- Timer text centered -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00.0"
+        android:textSize="90sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="80sp"
+        android:keepScreenOn="true" />
+
+    <!-- Start button under timer -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textSize="80sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/timerText"
+        android:layout_marginTop="60dp"/>
+
+    <!-- DebugEcho under start -->
+    <TextView
+        android:id="@+id/debugEcho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="debugEcho: -"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/startButton"
+        android:layout_marginTop="50dp"/>
+
+    <!-- DebugStopEcho -->
+    <TextView
+        android:id="@+id/debugStopEcho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="debugStopEcho: -"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/debugEcho"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/bottom_text_сopyleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:text="(ɔ) tapin13"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/bottom_text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:text="Version: 2.0"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp" />
+
+</RelativeLayout>
